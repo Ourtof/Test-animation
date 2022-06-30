@@ -1,0 +1,65 @@
+#flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-evenly;
+}
+
+.rect {
+    background-color: blue;
+    height: 200px;
+    width: 800px;
+    margin: 100px auto;
+}
+
+.rect:hover {
+    background-color: green;
+}
+
+.trans {
+    -webkit-transition: background-color 1s, -webkit-transform 1s;
+    transition: background-color 1s, -webkit-transform 1s;
+    -o-transition: background-color 1s, transform 1s;
+    transition: background-color 1s, transform 1s;
+    transition: background-color 1s, transform 1s, -webkit-transform 1s;
+}
+
+.carre {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+.carre:hover {
+    background-color: deepskyblue;
+    border-radius: 50%;
+}
+
+#transition {
+    -webkit-transition: border-radius 1s, background-color 2s;
+    -o-transition: border-radius 1s, background-color 2s;
+    transition: border-radius 1s, background-color 2s;
+}
+
+#radius {
+    -webkit-transition: border-radius 1s;
+    -o-transition: border-radius 1s;
+    transition: border-radius 1s;
+}
+
+#JL {
+    margin: 100px auto;
+    width: 300px;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+img:hover {
+    -webkit-transform: scale(3);
+    -ms-transform: scale(3);
+    transform: scale(3);
+}
